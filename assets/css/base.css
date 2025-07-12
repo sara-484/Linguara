@@ -1,0 +1,101 @@
+/* ============================================
+   🧱 base.css — Core global styles for the project
+   ============================================ */
+
+/* 🔁 Reset and box model normalization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌐 Main body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* ✨ Fade-in animation on page load */
+.fade-in {
+  animation: fadein 0.7s ease-in;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* 🎨 Global theme variables (light mode by default) */
+:root {
+  --bg: #ffffff;
+  --text: #333333;
+  --primary: #00bcd4;
+  --accent: #cba4d4;
+  --button-bg: #ffffff;
+  --button-text: #00bcd4;
+}
+
+/* 🌙 Theme override for dark mode */
+body.dark {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --primary: #1e88e5;
+  --accent: #bb86fc;
+  --button-bg: #1f1f1f;
+  --button-text: var(--accent);
+}
+
+/* 🖋️ Typography base */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--text);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+/* 🔗 Anchor tag default style */
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* 🧷 General CTA button style (used across pages) */
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  transition: background -color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--bg);
+  color: var(--accent);
+}
+
+/* find out wich page you are in */
+
+.active {
+  font-weight: bold;
+  background-color: #35086c;
+  padding: 1.3rem;
+}
+
+.activeReading {
+   font-weight: bold;
+   padding: 1.3rem;
+   background-color: #6c0808;
+}

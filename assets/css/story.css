@@ -1,0 +1,233 @@
+/* ✨ story.css - نسخه کامل با تم و حالت تعاملی پاسخ‌ها */
+.story-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 3rem;
+  background: var(--bg);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(var(--primary-rgb), 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-container::before {
+  content: attr(data-level);
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: var(--accent);
+  color: white;
+  padding: 0.3rem 2rem;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#story-title {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed rgba(var(--primary-rgb), 0.3);
+  font-family: 'Georgia', serif;
+}
+
+#story-level {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+#story-level::before {
+  content: "⏱️";
+}
+
+#story-level::after {
+  content: "📖";
+}
+
+#story-body {
+  line-height: 1.9;
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 3rem;
+}
+
+#story-body p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+#story-body p::before {
+  content: "❝";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  color: rgba(var(--accent-rgb), 0.5);
+  font-size: 1.8rem;
+}
+
+#story-questions {
+  background: rgba(var(--primary-rgb), 0.05);
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+  border-top: 3px solid var(--accent);
+}
+
+#story-questions h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+#story-questions h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--accent);
+  margin: 0.5rem auto;
+}
+
+.question {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 10px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  border-left: 4px solid var(--accent);
+  transition: transform 0.3s;
+}
+
+.question:hover {
+  transform: translateY(-3px);
+}
+
+.question h3 {
+  color: var(--text);
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.question ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.question li {
+  padding: 0.8rem 1rem;
+  background: rgba(var(--accent-rgb), 0.05);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid rgba(var(--accent-rgb), 0.1);
+}
+
+/* 🎯 حالت Hover اولیه */
+.question li:hover {
+  background: rgba(var(--accent-rgb), 0.1);
+  border-color: var(--accent);
+}
+
+/* ✅ گزینه صحیح */
+li.correct {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-color: #4CAF50;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* ❌ گزینه اشتباه */
+li.wrong {
+  background-color: rgba(244, 67, 54, 0.2);
+  border-color: #f44336;
+  color: #c62828;
+}
+
+/* 🔒 غیرفعال */
+li.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* ✅ پاسخ صحیح زیر سوال (در صورت استفاده) */
+.correct-answer {
+  display: none;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 6px;
+  color: #2e7d32;
+  font-weight: 600;
+  border-left: 3px solid #4CAF50;
+}
+
+.correct-answer::before {
+  content: "✅ ";
+}
+
+body.reading-mode {
+  --primary: #8f4d2d;
+  --accent: #af7552;
+  --primary-rgb: 143, 77, 45;
+  --accent-rgb: 175, 117, 82;
+}
+
+/* body.reading-mode.dark {
+  --primary: #a36545;
+  --accent: #d4977a;
+  --primary-rgb: 163, 101, 69;
+  --accent-rgb: 212, 151, 122;
+} */
+
+/* 📚 دارک مود اختصاصی برای صفحه reading-mode */
+body.reading-mode.dark {
+  --bg: #1f1b18;
+  --text: #f3e6db;
+  --primary: #a36545;
+  --accent: #d4977a;
+  --button-bg: #2a241f;
+  --button-text: #f8d1b4;
+}
+/* 🌙 دارک‌مود اختصاصی برای کارت‌های سوال */
+body.reading-mode.dark .question {
+  background-color: #2a241f; /* بک‌گراند تیره ملایم */
+  border-left-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.reading-mode.dark .question h3 {
+  color: var(--text);
+}
+
+body.reading-mode.dark .question li {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+body.reading-mode.dark .question li.correct {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-color: #4CAF50;
+  color: #A5D6A7;
+}
+
+body.reading-mode.dark .question li.wrong {
+  background-color: rgba(244, 67, 54, 0.2);
+  border-color: #f44336;
+  color: #EF9A9A;
+}
+

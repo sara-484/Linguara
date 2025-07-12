@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reading</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/reading.css" />
+
+</head>
+<body class="fade-in reading-mode">
+    
+    <nav class="navbar reading-navbar">
+    <div class="logo">Linguara</div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./vocabulary.html">Vocabulary</a></li>
+      <li><a href="./grammar.html">Grammar</a></li>
+      <li><a href="./listening.html">Listening</a></li>
+      <li><a href="./reading.html" class="activeReading">Reading</a></li>
+    </ul>
+    <div class="theme-switch">
+      <input type="checkbox" id="themeToggle" />
+      <label for="themeToggle" class="switch">
+        <span class="icon sun">☀️</span>
+        <span class="icon moon">🌙</span>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <section class="hero-reading">
+    <div class="overlay">
+      <h1>Reading Journey Begins Here</h1>
+      <p>Improve your reading skills through fun, thoughtful, and real-world texts.</p>
+      <a href="#reading-content" class="cta-button reading-btn">Start Reading</a>
+    </div>
+  </section>
+  
+  <section id="reading-content" class="reading-selection">
+  <h2>Choose Your Story</h2>
+  <div class="story-buttons">
+    <button class="story-btn" data-id="r1">Anna's Morning Routine</button>
+    <button class="story-btn" data-id="r2">A Visit to the Café</button>
+    <button class="story-btn" data-id="r3">Lost in a New City</button>
+  </div>
+</section>
+
+
+
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/reading.js"></script>
+</body>
+</html>

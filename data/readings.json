@@ -1,0 +1,209 @@
+{
+  "readings": [
+    {
+      "id": "r1",
+      "level": "beginner",
+      "title": "Anna's Morning Routine",
+      "estimatedTime": "3 min",
+      "paragraphs": [
+        "Anna wakes up at 6 a.m. every morning. She stretches, opens her window, and takes a deep breath.",
+        "She makes coffee and eats toast with jam while reading a news app.",
+        "After feeding her cat, she quickly gets dressed and leaves for work at 7:30.",
+        "She listens to relaxing music on the bus and plans her day mentally."
+      ],
+      "questions": [
+        {
+          "q": "What does Anna drink in the morning?",
+          "options": ["Tea", "Water", "Coffee"],
+          "a": "Coffee"
+        },
+        {
+          "q": "What does she do before getting dressed?",
+          "options": ["Feeds her cat", "Calls her mom", "Goes jogging"],
+          "a": "Feeds her cat"
+        },
+        {
+          "q": "How does Anna go to work?",
+          "options": ["By car", "By bus", "She walks"],
+          "a": "By bus"
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "level": "beginner",
+      "title": "A Visit to the Café",
+      "estimatedTime": "3 min",
+      "paragraphs": [
+        "Sam loves quiet cafés. On Saturday mornings, he walks to his favorite one two blocks away.",
+        "He usually orders a cappuccino and a chocolate muffin and sits by the window.",
+        "While sipping his coffee, he reads or writes in a small notebook.",
+        "Sometimes, he just watches people walking by and enjoys the peaceful vibe."
+      ],
+      "questions": [
+        {
+          "q": "What does Sam usually order?",
+          "options": ["Tea and cake", "Cappuccino and muffin", "Juice and sandwich"],
+          "a": "Cappuccino and muffin"
+        },
+        {
+          "q": "What does he do at the café?",
+          "options": ["Plays chess", "Talks to friends", "Reads or writes"],
+          "a": "Reads or writes"
+        },
+        {
+          "q": "Where does he like to sit?",
+          "options": ["At the counter", "Near the door", "By the window"],
+          "a": "By the window"
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "level": "intermediate",
+      "title": "Lost in a New City",
+      "estimatedTime": "4 min",
+      "paragraphs": [
+        "Maria moved to Berlin for work. She was excited—but also a little nervous.",
+        "On her first weekend, she decided to explore the city without a map.",
+        "She walked for hours, discovering cozy streets, small bookstores, and beautiful parks.",
+        "At one point, she realized she was completely lost—but instead of panicking, she smiled and asked a kind couple for help."
+      ],
+      "questions": [
+        {
+          "q": "Why did Maria move to Berlin?",
+          "options": ["For school", "For vacation", "For work"],
+          "a": "For work"
+        },
+        {
+          "q": "What did she forget to bring?",
+          "options": ["An umbrella", "A camera", "A map"],
+          "a": "A map"
+        },
+        {
+          "q": "How did Maria feel when she got lost?",
+          "options": ["Scared", "Angry", "Calm"],
+          "a": "Calm"
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "level": "intermediate",
+      "title": "The Job Interview",
+      "estimatedTime": "4 min",
+      "paragraphs": [
+        "James applied for a marketing position at a big tech company.",
+        "He wore a navy suit and practiced answering interview questions with his friend.",
+        "During the interview, he stayed calm and spoke clearly about his experience.",
+        "After it ended, he thanked the interviewer and walked out feeling confident—but nervous, too."
+      ],
+      "questions": [
+        {
+          "q": "What kind of job did James apply for?",
+          "options": ["Designer", "Developer", "Marketing"],
+          "a": "Marketing"
+        },
+        {
+          "q": "How did James prepare for the interview?",
+          "options": ["Read a book", "Watched videos", "Practiced with a friend"],
+          "a": "Practiced with a friend"
+        },
+        {
+          "q": "How did he feel after the interview?",
+          "options": ["Confident but nervous", "Bored", "Excited and relaxed"],
+          "a": "Confident but nervous"
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "level": "intermediate",
+      "title": "My Grandfather’s Letter",
+      "estimatedTime": "5 min",
+      "paragraphs": [
+        "One summer, I found an old letter in my grandfather’s drawer. It was written in elegant handwriting and dated 1962.",
+        "The letter spoke about dreams, travel, and hard decisions he made when he was young.",
+        "I realized how brave he had been, and how similar his fears were to mine.",
+        "Reading that letter made me feel connected to him in a deep, quiet way."
+      ],
+      "questions": [
+        {
+          "q": "Where did the narrator find the letter?",
+          "options": ["In a book", "In a box", "In a drawer"],
+          "a": "In a drawer"
+        },
+        {
+          "q": "When was the letter written?",
+          "options": ["1972", "1962", "1982"],
+          "a": "1962"
+        },
+        {
+          "q": "How did the narrator feel after reading it?",
+          "options": ["Confused", "Disconnected", "Deeply connected"],
+          "a": "Deeply connected"
+        }
+      ]
+    },
+    {
+      "id": "r6",
+      "level": "advanced",
+      "title": "The Hacker",
+      "estimatedTime": "5 min",
+      "paragraphs": [
+        "Late one night, Mira discovered that her company’s website had been hacked.",
+        "As the team’s cybersecurity lead, she quickly launched a full system diagnostic.",
+        "What she found shocked her: the breach was subtle, quiet—and brilliant.",
+        "It wasn’t just code. Whoever did this knew how people think. It felt personal.",
+        "Mira stared at the screen. This wasn’t about theft. It was a challenge."
+      ],
+      "questions": [
+        {
+          "q": "What did Mira discover?",
+          "options": ["A virus on her laptop", "An online scam", "A hack on the company website"],
+          "a": "A hack on the company website"
+        },
+        {
+          "q": "What made the hack unusual?",
+          "options": ["It was loud and obvious", "It was slow and unprofessional", "It was subtle and psychological"],
+          "a": "It was subtle and psychological"
+        },
+        {
+          "q": "How did Mira feel about the attack?",
+          "options": ["Threatened", "Challenged", "Indifferent"],
+          "a": "Challenged"
+        }
+      ]
+    },
+    {
+      "id": "r7",
+      "level": "advanced",
+      "title": "The Traveler’s Secret",
+      "estimatedTime": "6 min",
+      "paragraphs": [
+        "In a quiet village nestled between mountains, a traveler checked into the inn with only a notebook and an old leather bag.",
+        "He spoke little, always smiling kindly, and wandered into the woods each morning.",
+        "One evening, curious children followed him and saw him planting small notes beneath trees.",
+        "Years later, when a terrible storm destroyed part of the forest, the notes were found—messages of wisdom, warnings, and love.",
+        "No one knew his name. But the village never forgot the man who left behind hope in ink."
+      ],
+      "questions": [
+        {
+          "q": "What did the traveler carry?",
+          "options": ["A suitcase and a phone", "A notebook and a leather bag", "A map and food"],
+          "a": "A notebook and a leather bag"
+        },
+        {
+          "q": "Where did he go each morning?",
+          "options": ["To the village square", "To the woods", "To the river"],
+          "a": "To the woods"
+        },
+        {
+          "q": "What did he leave behind?",
+          "options": ["Money", "Books", "Messages"],
+          "a": "Messages"
+        }
+      ]
+    }
+  ]
+}

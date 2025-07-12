@@ -1,0 +1,273 @@
+/* ============================================
+   🎧 listening.css - Styles for Listening Module
+   ============================================ */
+
+/* 🌊 هیرو سکشن */
+.listening-hero {
+  position: relative;
+  height: 90vh;
+  min-height: 600px;
+  background: linear-gradient(135deg, rgba(0,188,212,0.9) 0%, rgba(203,164,212,0.8) 100%),
+              url('../images/listening-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.listening-hero .hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+  z-index: 2;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.listening-hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.listening-hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .cta-button {
+  padding: 1rem 2.2rem;
+  font-size: 1.1rem;
+}
+
+.hero-buttons .secondary {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.hero-buttons .secondary:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* موج پایین هیرو */
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.hero-wave path {
+  fill: var(--bg);
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* حالت تاریک */
+body.dark .listening-hero {
+  background: linear-gradient(135deg, rgba(30,136,229,0.9) 0%, rgba(187,134,252,0.8) 100%),
+              url('../images/listening-bg-dark.jpg') center/cover no-repeat;
+}
+
+body.dark .hero-wave path {
+  fill: var(--bg);
+}
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+  .listening-hero {
+    height: 80vh;
+    min-height: 500px;
+  }
+  
+  .listening-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .listening-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hero-buttons .cta-button {
+    width: 100%;
+  }
+}
+
+/* 📻 استایل بخش دروس */
+.audio-lessons {
+  padding: 4rem 2rem;
+  background: var(--bg);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: var(--text);
+  opacity: 0.8;
+}
+
+/* کارت‌های درس */
+.lessons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lesson-card {
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+}
+
+/* پخش کننده صوت */
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(var(--primary-rgb), 0.05);
+}
+
+.play-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.play-btn:hover {
+  background: var(--accent);
+  transform: scale(1.05);
+}
+
+.play-btn i {
+  font-size: 1.2rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(var(--primary-rgb), 0.1);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 3px;
+  transition: width 0.1s;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+/* اطلاعات درس */
+.lesson-info {
+  padding: 1.5rem;
+}
+
+.lesson-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.lesson-info .level {
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.show-transcript {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.show-transcript:hover {
+  color: var(--accent);
+}
+
+/* ترانسکریپت */
+.transcript {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  transition: max-height 0.3s ease;
+}
+
+.transcript.show {
+  max-height: 500px;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(var(--primary-rgb), 0.1);
+}
+
+/* حالت تاریک */
+body.dark .lesson-card {
+  --card-bg: #1f1f1f;
+}
+
+body.dark .audio-player {
+  background: rgba(255,255,255,0.05);
+}
+
+body.dark .transcript.show {
+  border-top-color: rgba(255,255,255,0.1);
+}

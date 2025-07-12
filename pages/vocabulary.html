@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vocabular</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/vocabulary.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">Linguara</div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./vocabulary.html" class="active">Vocabulary</a></li>
+      <li><a href="./grammar.html">Grammar</a></li>
+      <li><a href="./listening.html">Listening</a></li>
+      <li><a href="./reading.html">Reading</a></li>
+    </ul>
+    <div class="theme-switch">
+      <input type="checkbox" id="themeToggle" />
+      <label for="themeToggle" class="switch">
+        <span class="icon sun">☀️</span>
+        <span class="icon moon">🌙</span>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <section class="hero vocab-hero fade-in">
+  <div class="hero-content">
+    <span class="icon-above">🧠</span>
+    <h1 class="hero-title">Explore Vocabulary</h1>
+    <p class="hero-subtitle">
+      Discover useful words by theme, category, and context. Unlock your language potential one word at a time.
+    </p>
+    <a href="#vocab-list" class="cta-button">Start Learning</a>
+  </div>
+</section>
+
+  <section class="word-carousel fade-in ">
+  <div class="word-card" id="carousel-card">
+    <h3 id="carousel-word">Inspire 🌟</h3>
+    <p id="carousel-definition">To fill someone with a good idea or feeling</p>
+  </div>
+</section>
+
+  <section class="vocab-categories fade-in">
+  <h2 class="section-heading">Choose a Category</h2>
+  <div class="category-grid">
+    <!-- <div class="category-card" onclick="scrollToCategory('tech')"> -->
+    <div class="category-card" onclick="showModal('Technology')">
+      <span class="category-emoji">💻</span>
+      <h3>Technology</h3>
+      <p>Digital terms for the modern world</p>
+    </div>
+
+    <div class="category-card" onclick="showModal('emotions')">
+      <span class="category-emoji">😊</span>
+      <h3>Emotions</h3>
+      <p>Words that express how you feel</p>
+    </div>
+
+    <div class="category-card" onclick="showModal('food')">
+      <span class="category-emoji">🍎</span>
+      <h3>Food</h3>
+      <p>Everyday language about what we eat</p>
+    </div>
+
+    <div class="category-card" onclick="showModal('nature')">
+      <span class="category-emoji">🌿</span>
+      <h3>Nature</h3>
+      <p>Words from the world around us</p>
+    </div>
+    <!-- Add more as needed -->
+  </div>
+</section>
+
+<div id="vocabModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">×</span>
+    <div id="modalHeader"></div>
+    <div id="wordCardsContainer" class="card-grid"></div>
+    <button class="view-more" onclick="viewMore()">View More Words</button>
+  </div>
+</div>
+
+
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/vocabulary.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "grammarTopics": [
+    {
+      "title": "Simple Present Tense",
+      "slug": "simple-present",
+      "level": "beginner",
+      "description": "We use this to talk about habits, facts, and things that are always true.",
+      "tip": "Add 's' for he, she, it: 'He reads every day.'",
+      "examples": {
+        "sentences": [
+          "She drinks tea every morning.",
+          "The sun rises in the east."
+        ],
+        "realWorld": [
+          "A restaurant menu says: 'This dish comes with salad.'",
+          "A school notice says: 'Classes start at 8 AM.'"
+        ]
+      }
+    },
+    {
+      "title": "Present Continuous Tense",
+      "slug": "present-continuous",
+      "level": "beginner",
+      "description": "We use this to talk about things happening right now.",
+      "tip": "Always use 'am/is/are' + verb + ing.",
+      "examples": {
+        "sentences": [
+          "I am studying for my exam.",
+          "They are playing football in the park."
+        ],
+        "realWorld": [
+          "A student says: 'I’m working on my homework now.'",
+          "A friend texts: 'We’re watching a movie!'"
+        ]
+      }
+    },
+    {
+      "title": "Past Simple Tense",
+      "slug": "past-simple",
+      "level": "beginner",
+      "description": "We use this to talk about things that happened before now.",
+      "tip": "Use past verb forms like 'walked' or 'went.'",
+      "examples": {
+        "sentences": [
+          "He watched a movie last night.",
+          "I visited Paris in 2020."
+        ],
+        "realWorld": [
+          "A diary says: 'Today was amazing. I saw a rainbow!'",
+          "A news report says: 'The concert ended at 10 PM.'"
+        ]
+      }
+    },
+    {
+      "title": "Articles: a, an, the",
+      "slug": "articles",
+      "level": "beginner",
+      "description": "We use 'a' or 'an' for something general, and 'the' for something specific.",
+      "tip": "Use 'an' before a vowel sound: 'an apple.'",
+      "examples": {
+        "sentences": [
+          "I saw a cat in the garden.",
+          "She bought an umbrella.",
+          "The cat was sleeping."
+        ],
+        "realWorld": [
+          "A product label says: 'This is an excellent choice.'",
+          "A teacher says: 'Open the book to page 12.'"
+        ]
+      }
+    },
+    {
+      "title": "Prepositions of Place",
+      "slug": "prepositions-place",
+      "level": "beginner",
+      "description": "We use these to show where something is.",
+      "tip": "Common prepositions: in, on, under, next to.",
+      "examples": {
+        "sentences": [
+          "The keys are on the table.",
+          "She is in the kitchen."
+        ],
+        "realWorld": [
+          "A sign says: 'Please wait behind the line.'",
+          "A friend says: 'Your bag is under the chair.'"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listening Practice | Linguara</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/navbar.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/listening.css">
+  <link rel="stylesheet" href="../assets/css/quiz.css" />
+
+</head>
+<body>
+  <!-- نوبار اصلی -->
+  <nav class="navbar">
+    <div class="logo">Linguara</div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./vocabulary.html">Vocabulary</a></li>
+      <li><a href="./grammar.html">Grammar</a></li>
+      <li><a href="./listening.html" class="active">Listening</a></li>
+      <li><a href="./reading.html">Reading</a></li>
+    </ul>
+    <div class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+      <label for="themeToggle" class="switch">
+        <span class="icon sun">☀️</span>
+        <span class="icon moon">🌙</span>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <!-- هیرو سکشن -->
+  <section class="listening-hero">
+    <div class="hero-content">
+      <h1>Sharpen Your Ears</h1>
+      <p>Immerse yourself in authentic English conversations and audio stories</p>
+      <div class="hero-buttons">
+        <a href="#lessons" class="cta-button">Start Learning</a>
+        <a href="#how-it-works" class="cta-button secondary">How It Works</a>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="var(--primary)"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="var(--primary)"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="var(--primary)"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- بعد از هیرو سکشن -->
+<main>
+  
+
+  <section id="lessons" class="audio-lessons">
+    <div class="section-header">
+      <h2>Listening Lessons</h2>
+      <p>Select a lesson to start practicing</p>
+    </div>
+
+    <div class="lessons-container">
+      <!-- کارت‌های دروس -->
+      <div class="lesson-card">
+  <div class="audio-player">
+    <audio id="audio1" src="../assets/audio/post-office.mp3"></audio>
+    <button class="play-btn" data-audio="audio1">
+      <i class="fas fa-play"></i>
+    </button>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <span class="duration">2:45</span>
+  </div>
+  <div class="lesson-info">
+    <h3>Daily Conversation</h3>
+    <p class="level">Beginner • 3 min</p>
+    <button class="show-transcript">Show Transcript</button>
+  </div>
+  <div class="transcript">
+    <h4>Transcript:</h4>
+    <p>[This is where the transcript text will appear...]</p>
+  </div>
+
+  <!-- ✅ Quiz here -->
+  <div class="quiz-container" data-quiz-id="post-office"></div>
+</div>
+
+<div class="lesson-card">
+  <div class="audio-player">
+    <audio id="audio2" src="../assets/audio/cafeteria-menu.mp3"></audio>
+    <button class="play-btn" data-audio="audio2">
+      <i class="fas fa-play"></i>
+    </button>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <span class="duration">4:10</span>
+  </div>
+  <div class="lesson-info">
+    <h3>Short Story</h3>
+    <p class="level">Intermediate • 5 min</p>
+    <button class="show-transcript">Show Transcript</button>
+  </div>
+  <div class="transcript">
+    <h4>Transcript:</h4>
+    <p>[Transcript for story...]</p>
+  </div>
+
+  <!-- ✅ Quiz here -->
+  <div class="quiz-container" data-quiz-id="cafeteria"></div>
+</div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Listening.html — updated script tags -->
+<script defer src="../assets/js/script.js"></script>
+<script defer src="../assets/js/listening.js"></script>
+<!-- Load quiz script as a module -->
+<script type="module" src="../assets/js/quizRender.js"></script>
+
+<!-- Call your quiz render function after it’s defined -->
+<script type="module">
+  import { renderInlineQuizzes } from '../assets/js/quizRender.js';
+  renderInlineQuizzes("./listening-quiz.json");
+</script>
+
+
+</body>
+
+</html>

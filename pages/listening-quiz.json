@@ -1,0 +1,46 @@
+{
+  "post-office": [
+    {
+      "q": "Where is the post office located?",
+      "options": [
+        "Next to the library",
+        "Near the bus station",
+        "Next to the bakery",
+        "Behind the supermarket"
+      ],
+      "a": "Next to the bakery"
+    },
+    {
+      "q": "What time does the post office close?",
+      "options": [
+        "At 4 PM",
+        "At 5 PM",
+        "At 6 PM",
+        "At 7 PM"
+      ],
+      "a": "At 5 PM"
+    }
+  ],
+  "cafeteria": [
+    {
+      "q": "Which of the following is gluten-free?",
+      "options": [
+        "Vegetarian pasta",
+        "Mushroom soup",
+        "Grilled chicken",
+        "Bread"
+      ],
+      "a": "Grilled chicken"
+    },
+    {
+      "q": "What should the person do to confirm the soup ingredients?",
+      "options": [
+        "Ask someone at the cafeteria",
+        "Check the label",
+        "Avoid eating soup",
+        "Look it up online"
+      ],
+      "a": "Ask someone at the cafeteria"
+    }
+  ]
+}

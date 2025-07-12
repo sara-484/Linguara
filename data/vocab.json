@@ -1,0 +1,33 @@
+[
+  { "category": "Emotions", "word": "excited 🤩", "definition": "Very happy and eager", "example": "She felt excited before the trip." },
+  { "category": "Emotions", "word": "nervous 😬", "definition": "Worried or afraid about something", "example": "He was nervous before his speech." },
+  { "category": "Emotions", "word": "grateful 🙏", "definition": "Feeling thankful", "example": "I’m grateful for your help." },
+  
+
+  { "category": "Actions", "word": "laugh 😂", "definition": "To make a happy sound when something is funny", "example": "We laughed at the joke." },
+  { "category": "Actions", "word": "jump 🦘", "definition": "To push yourself up off the ground", "example": "The cat can jump really high." },
+  { "category": "Actions", "word": "write ✍️", "definition": "To put words on paper or screen", "example": "She writes stories every day." },
+
+  { "category": "Food", "word": "banana 🍌", "definition": "A yellow fruit that is soft and sweet", "example": "I had a banana for breakfast." },
+  { "category": "Food", "word": "rice 🍚", "definition": "A small white grain you eat with meals", "example": "We had chicken and rice for dinner." },
+  { "category": "Food", "word": "cheese 🧀", "definition": "A dairy food made from milk", "example": "Would you like cheese on your sandwich?" },
+
+  { "category": "Nature", "word": "mountain 🏔️", "definition": "A very high hill", "example": "We climbed the mountain together." },
+  { "category": "Nature", "word": "river 🌊", "definition": "A long stream of water", "example": "The river flows through the city." },
+  { "category": "Nature", "word": "flower 🌸", "definition": "A colorful part of a plant", "example": "The garden is full of flowers." },
+
+  { "category": "School", "word": "teacher 👩‍🏫", "definition": "Someone who helps you learn", "example": "The teacher gave us homework." },
+  { "category": "School", "word": "book 📖", "definition": "A thing you read", "example": "I’m reading a new book." },
+  { "category": "School", "word": "pen 🖊️", "definition": "A tool for writing", "example": "He wrote a note with a pen." },
+
+  { "category": "Travel", "word": "airport ✈️", "definition": "A place where planes land and take off", "example": "We waited at the airport for our flight." },
+  { "category": "Travel", "word": "map 🗺️", "definition": "A picture that shows places", "example": "He looked at the map to find the hotel." },
+  { "category": "Travel", "word": "hotel 🏨", "definition": "A place where people stay while traveling", "example": "We stayed at a nice hotel." },
+
+  { "category": "Technology", "word": "computer 🖥️", "definition": "An electronic machine that helps you work or play", "example": "She uses a computer to write stories." },
+  { "category": "Technology", "word": "internet 🌐", "definition": "A global system that connects computers", "example": "I found the recipe on the internet." },
+  { "category": "Technology", "word": "keyboard ⌨️", "definition": "A tool you use to type", "example": "He typed the letter using the keyboard." },
+  { "category": "Technology", "word": "app 📱", "definition": "A program on your phone or tablet", "example": "I use a weather app every day." },
+  { "category": "Technology", "word": "robot 🤖", "definition": "A machine that can do things like a human", "example": "The robot helped clean the house." }
+
+]

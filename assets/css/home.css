@@ -1,0 +1,135 @@
+/* ============================================
+   🏠 home.css — Styles specific to homepage layout
+   ============================================ */
+
+/* 🎯 Hero section at top of homepage */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* 📋 About section */
+.about {
+  padding: 4rem 2rem;
+  background: var(--bg);
+  text-align: center;
+  color: var(--text);
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.icon-above {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* 🖼️ Skills section with image cards */
+.skills {
+  background-color: var(--bg);
+  padding: 4rem 2rem;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.skill-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.skill-card {
+  position: relative;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.skill-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* 💡 Features section — vertical layout */
+.features-vertical {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--bg);
+  margin-top: 4rem;
+}
+
+.features-vertical h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.feature-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.feature-step i {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-top: 0.3rem;
+  min-width: 30px;
+}
+
+.feature-step h3 {
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+}
+
+.feature-step p {
+  line-height: 1.6;
+  color: var(--text);
+}
